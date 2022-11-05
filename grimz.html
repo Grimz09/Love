@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Hi!!!! :D</title>
+  </head>
+  <body>
+    <div class="parallax backround">
+      <div class="container">
+        <div class="text">
+          <p class="title animate__animated animate__fadeInDown">Hallo !</p>
+          <img src="assets/foto/bunga.gif" alt="bunga gif" style="height: 280px" class="img-gif animate__animated animate__jackInTheBox"/>
+          <p class="description animate__animated animate__fadeIn">Would you be my girlfriend?</p>
+        </div>
+      </div>
+      <div class="mt-10">
+        <button class="btn-mw animate__animated animate__bounceInLeft" onclick="mau()">Yes</button>
+        <button class="btn-gmw animate__animated animate__bounceInRight" onclick="gak(this)">No</button>
+        <p class="copyright animate__animated animate__flash animate__infinite">©Grimz09</p>
+      </div>
+      <script>
+        function mau() {
+          alert("I didn't expect you to accept it HAHAHA!");
+          alert("Now reply to messages from this website via whatsapp :D");
+
+          location.assign("https://wa.me/?text=I%20want%20to%20be%20your%20GirlFriend%20^-^");
+        }
+        function gak(ini) {
+          ini.style.position = "absolute";
+          ini.style.left = `${Math.floor(Math.random() * 75)}%`;
+          ini.style.top = `${Math.floor(Math.random() * 75)}%`;
+        }
+      </script>
+    </div>
+  </body>
+</html>
